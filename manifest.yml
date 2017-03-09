@@ -1,0 +1,15 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: azaleatest
+  host: azaleatest
+  disk_quota: 1024M
+  services:
+  - azaleatest-cloudantNoSQLDB
+  - azaleatest-iotf-service
+  - Single Sign On-ne
+  env:
+    NODE_RED_USERNAME: tominaga
+    NODE_RED_PASSWORD: '8553808473'
